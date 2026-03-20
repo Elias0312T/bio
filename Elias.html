@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elias Bio</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .card {
+        background: rgba(255,255,255,0.05);
+        backdrop-filter: blur(10px);
+        padding: 30px;
+        border-radius: 20px;
+        width: 350px;
+        text-align: center;
+        box-shadow: 0 0 25px rgba(0,0,0,0.8);
+        animation: fadeIn 1.5s ease;
+    }
+
+    h1 {
+        margin-bottom: 10px;
+        font-size: 28px;
+        letter-spacing: 2px;
+    }
+
+    .info {
+        margin: 10px 0;
+        padding: 10px;
+        border-radius: 10px;
+        background: rgba(255,255,255,0.07);
+        transition: 0.3s;
+    }
+
+    .info:hover {
+        transform: scale(1.05);
+        background: rgba(255,255,255,0.15);
+    }
+
+    .typing {
+        border-right: 2px solid white;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 0;
+        animation: typing 4s steps(30, end) forwards, blink 0.7s infinite;
+    }
+
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+
+    @keyframes blink {
+        50% { border-color: transparent }
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px);}
+        to { opacity: 1; transform: translateY(0);}
+    }
+
+    .footer {
+        margin-top: 20px;
+        font-size: 12px;
+        opacity: 0.6;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1 class="typing">Elias0312T</h1>
+
+    <div class="info">🌍 Land: Deutschland</div>
+    <div class="info">🗣️ Sprachen: Deutsch / Englisch</div>
+
+    <div class="info">🎮 Minecraft: Elias0312T</div>
+    <div class="info">💬 Discord: elias0312t</div>
+    <div class="info">📺 YouTube: Elias0312T</div>
+    <div class="info">🧠 Duolingo: Elias0312T</div>
+
+    <div class="footer">✨ Simple Bio Page</div>
+</div>
+
+</body>
+</html>
